@@ -1,0 +1,23 @@
+[project]
+name = "auto-rlvr"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Kirilchuk Artem", email = "kirilchykaa@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.15.0",
+    "datasets>=1.1.1",
+    "sglang>=0.5.20",
+    "torch>=2.13.0",
+    "transformers>=5.12.1",
+]
+
+[project.scripts]
+auto-rlvr = "auto_rlvr:main"
+
+[build-system]
+requires = ["uv_build>=0.12.11,<0.13.0"]
+build-backend = "uv_build"
